@@ -6,7 +6,7 @@ class SpindleBattery(Battery):
         self.current_date= current_date
 
     def spindle_battery_should_by_serviced(self):
-        if  self.current_date - self.service_date == 2 :
+        if  self.current_date - self.service_date > 3 :
             return True
         else:
             return False
